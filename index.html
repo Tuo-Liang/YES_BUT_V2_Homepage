@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="Cracking the Code of Juxtaposition: Can AI Models Understand the Humorous Contradictions">
+    <meta name="keywords" content="VLM, Humor Understanding, Juxtaposition">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cracking the Code of Juxtaposition: Can AI Models Understand the Humorous Contradictions</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><br>Cracking the Code of Juxtaposition: Can AI Models Understand the Humorous Contradictions
+            </h1>
+                <div class="is-size-4 publication-authors">
+                <!-- Paper authors -->
+                  <span class="author-block">
+                  <a href="https://derekhu.com/" target="_blank"><br>Zhe Hu*<sup>1</sup></a>,</span>
+                  <span class="author-block">
+                  <a href="https://Tuo-Liang.github.io" target="_blank">Tuo Liang*<sup>2</sup></a>,</span>
+                  <span class="author-block">
+                  <a href="" target="_blank">Jing Li<sup>1</sup></a>,</span>
+                  <span class="author-block">
+                  <a href="https://yiren-lu.com/" target="_blank">Yiren Lu<sup>2</sup></a>,</span>
+                  <span class="author-block">
+                  <a href="https://www.linkedin.com/in/%E4%BA%91%E6%9D%A5-%E5%91%A8-932a022aa/?locale=en_US" target="_blank">Yunlai Zhou<sup>2</sup></a>,</span>
+                  <span class="author-block">
+                  <a href="https://www.linkedin.com/in/yiran-qiao-10298b238/" target="_blank">Yiran Qiao<sup>2</sup></a>,</span>
+                  <span class="author-block">
+                  <a href="https://jma712.github.io/" target="_blank">Jing Ma<sup>2</sup></a>,</span>
+                  <span class="author-block">
+                  <a href="https://yin-yu.github.io/" target="_blank">Yu Yin<sup>2</sup></a>
+                  </span>
+                </div>
+
+                <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>The Hong Kong Polytechnic University   <sup>2</sup>Case Western Reserve University<br>
+                    </span>
+                </div>
+                <div class="is-size-4 publication-authors"> <font color = 'red';><b>NeurIPS 2024 (Oral)</b></font><br> </div>
+                <div class="is-size-4 publication-authors"> <span class="eql-cntrb"><small><sup>*</sup>Indicates Equal Contribution</small><br> </div>
+                
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://neurips.cc/virtual/2024/oral/97967" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- ArXiv abstract Link -->
+                  <span class="link-block">
+                    <a href="https://arxiv.org/html/2405.19088v1" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/Tuo-Liang/YESBUT" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Github</span>
+                  </a>
+                </span>
+
+                  <!-- Hugging Face Link -->
+                  <span class="link-block">
+                    <a href="https://huggingface.co/datasets/zhehuderek/YESBUT_Benchmark" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <img src="https://cdn-lfs.hf.co/repos/96/a2/96a2c8468c1546e660ac2609e49404b8588fcf5a748761fa72c154b2836b4c83/533d195d96af7a2f996b2170c941e05698e8b270d29366f5e1f109d4ddf0bd55?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27hf-logo-pirate.svg%3B+filename%3D%22hf-logo-pirate.svg%22%3B&response-content-type=image%2Fsvg%2Bxml&Expires=1731981583&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTczMTk4MTU4M319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9yZXBvcy85Ni9hMi85NmEyYzg0NjhjMTU0NmU2NjBhYzI2MDllNDk0MDRiODU4OGZjZjVhNzQ4NzYxZmE3MmMxNTRiMjgzNmI0YzgzLzUzM2QxOTVkOTZhZjdhMmY5OTZiMjE3MGM5NDFlMDU2OThlOGIyNzBkMjkzNjZmNWUxZjEwOWQ0ZGRmMGJkNTU%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT0qIn1dfQ__&Signature=qQrFRxEOpoDj3XY7wYEyTgckpqRMGx-8xqL%7E1nrfwRgxw6qB-9RRhrxVbH7jmBAoSKg3tOJuN2ndl1zejAmdpUtknhxgBp-soUu4hr0JtUi4m8wysV%7ESm01WnVXLlepjtJxr-SqtRiEHufHHEG%7EW9fdk-fgehvDi092nLlTIJRIik8ANVCHzA%7ERxXju7-gpEBqrqD-HpXayD-ojNGKpEIaywOEMANxQeUJmC2PZxJfVe7oQCcA9tbjoohtaIcEo6DTnRfmmFklqiQ0hzhMCtcqAFcPkHP9U3t4weJBRlVFOtoBZYVl8STpn0Jx3QKtVk%7Eo7mL5tDCXjI8Mf4GzsboQ__&Key-Pair-Id=K3RPWS32NSSJCE" alt="HF Logo Pirate" width="50" height="50">
+                    </span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/intro_example.jpg" alt="MY ALT TEXT"/>
+      </div>
+      <div class="content has-text-justified">
+        <p>
+            We introduce the <span class="is-size-5 dnerf"><b>YesBut</b> </span> dataset to examine VLMs' capability in understanding humor, with a specific emphasis on humor derived from contrasting narratives (juxtaposition). (Comic by Anton Gudim)
+        </p>
+        
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
+
+<!-- Abstract -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Abstract</h2>
+      </div>
+      <div class="content has-text-justified">
+        <p>
+          Recent advancements in large multimodal language models have demonstrated remarkable proficiency across a wide range of tasks. 
+          Yet, these models still struggle with understanding the nuances of human humor through juxtaposition, particularly when it involves nonlinear narratives that underpin many jokes and humor cues.  This paper investigates this challenge by focusing on comics with contradictory narratives, where each comic consists of two panels that create a humorous contradiction. 
+          We introduce the <span class="dnerf"><b>YesBut</b> </span> benchmark, which comprises tasks of varying difficulty aimed at assessing AI's capabilities in recognizing and interpreting these comics, ranging from literal content comprehension to deep narrative reasoning. 
+          Through extensive experimentation and analysis of recent commercial or open-sourced large (vision) language models, we assess their capability to comprehend the complex interplay of the narrative humor inherent in these comics. Our results show that even state-of-the-art models still lag behind human performance on this task. Our findings offer insights into the current limitations and potential improvements for AI in understanding human creative expressions.
+        </p>
+    </div>
+  </div>
+</section>
+<!-- End Abstract -->
+
+<!-- Dataset overview -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3"><span class="dnerf">YesBut</span> Dataset Overview</h2>
+      </div>
+      <div class="content has-text-justified">
+        <p>
+          Our benchmark consists of <span class="dnerf">YesBut</span> comics featuring contradictory narratives. Specifically, each sample includes:<br>
+            (1) a two-panel comic that forms a narrative with inherent contradictions;
+            <br>
+            (2) a literal description of the comic narratives;
+            <br>
+            (3) an explanation that illustrates the contradiction within the narrative;
+            <br>
+            (4) the deep philosophy or underlying message the comic aims to convey;
+            <br>
+            (5) a title of the comic.
+            <br>
+            Based on these components, we construct various tasks for comic understanding.
+        </p>
+
+    </div>
+  </div>
+</section>
+<!-- End pipeline overview -->
+
+<!-- Pipeline overview -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Data Construction Pipeline</h2>
+      </div>
+      <div class="item">
+        <img src="static/images/annotation_pipeline.jpg" alt="MY ALT TEXT"/>
+      </div>
+      <div class="content has-text-justified">
+        <p>
+          <br>For each comic, we annotate the corresponding literal description, contradiction explanation, underlying philosophy and comic title. The annotation process consists of two key stages: a <b>human-AI collaborative annotation stage</b> (steps 1 & 2) followed by a <b>quality check and cross-verification stage</b> (step 3). Gold-standard annotations are primarily obtained through human annotators. ('Pos' and 'Neg' in figure represent the positive and negative options, respectively.)
+        </p>
+    </div>
+  </div>
+</section>
+<!-- End Pipeline overview -->
+
+<!-- Tasks -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-3">Evaluating Large Models' Understanding of Humor in Juxtaposition: Task Designs from Our Paper</h2>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            We aim to evaluate the capabilities of recent large (visual) language models in understanding humor through contradictions. This is challenging because it requires both <b>social reasoning</b> about human events and <b>nonlinear logical reasoning</b> about the narratives, going beyond the literal understanding of the comic. We design a series of tasks that require different levels of narrative understanding and reasoning abilities to evaluate the models’ performance in reading comics.
+          </p>
+        </div>
+        <div class="item">
+          <img src="static/images/tasks.jpg" alt="MY ALT TEXT"/>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End Tasks -->
+
+<!-- Error Analysis and Future Directions -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-3">Navigating VLM Failures: Lessons and Future Pathways</h2>
+        </div>
+
+        <div class="content has-text-justified">
+          <ul>
+            <li>
+              <span class="is-size-5 dnerf purple-text underline"><b>Visual Misinterpretation</b></span>: The model incorrectly interprets the image contents.
+              <div class="item">
+                <img src="static/images/error1.jpg" alt="MY ALT TEXT"/>
+              </div>
+              <p>
+                => <i>This highlights the need for future research to improve models’ visual interpretation capabilities.</i>
+              </p>
+            </li>
+            <li>
+              <p>
+              <span class="is-size-5 dnerf red-text"><b>In-depth Reasoning of the Relationship</b></span>: Models also struggle to conduct in-depth reasoning of the relationship between two panels by recognizing their differences and similarities.
+              </p>
+              <!-- <b>In-depth Reasoning of the Relationship</b> -->
+              <div class="item">
+                <img src="static/images/error2.jpg" alt="MY ALT TEXT"/>
+              </div>
+              <p>
+                => <i>Future work might incorporate recent advanced reasoning approaches (e.g., multi-agent debate [68], test-time compute scaling [69]) to further improve model performance.</i>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span class="is-size-5 dnerf darkblue-text"><b>Hallucination and Incorrect Association</b></span>
+              </p>
+              <div class="item">
+                <img src="static/images/error3.jpg" alt="MY ALT TEXT"/>
+              </div>
+              <p>
+                => <i>This suggests the need for improving world knowledge and social understanding abilities to enhance model performance on this task.</i>
+              </p>
+            </li>
+          </ul> 
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End Error Analysis and Future Directions -->
+
+
+<!-- Potential Applications -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-3">Potential Applications</h2>
+        </div>
+
+        <div class="content has-text-justified">
+          <ul>
+            <li>
+              <p>
+                <span class="is-size-5 dnerf"><b>VLM / LLM Evaluation</b></span></br>
+                As a benchmark, this dataset can be used to evaluate the reasoning ability, comic understanding and humor understanding ability of a Vision Language Model. The following result is the how we evaluate the humor understanding ability of VLMs in our paper.
+              </p>
+              
+              <div class="item">
+                <img src="static/images/app1_evaluation.jpg" alt="FAIL TO LOAD"/>
+              </div>
+              </br>
+            </li>
+
+            <li>
+              <p>
+                <span class="is-size-5 dnerf"><b>Generative task</b></span></br>
+                In the future, we intend to explore more deeply how AI can not only interpret but also creatively engage with content. This includes generating pivotal turning points from one perspective and creating counterpoints to given scenarios, like generating a "YES" image’s counterpart. The following is a simple example of it.                
+              </p>
+
+              <div class="image-container">
+                <img src="static/images/app2_generation.jpg" alt="FAIL TO LOAD" style="width: 500px;" />
+              </div>
+              </br>
+            </li>
+
+            <li>
+              <p>
+                <span class="is-size-5 dnerf"><b>VLM image understanding</b></span></br>
+                We will explore in more depth how VLM understands these images and how to improve VLM’s ability to understand these humorous images. We can address the hallucinations in the samples by improving the model’s reasoning ability and improve VLM’s understanding of the deep semantics of the images.
+              </p>
+              <div class="item">
+                <img src="static/images/app3_understand.jpg" alt="FAIL TO LOAD"/>
+              </div>
+            </li>
+
+          </ul> 
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End Error Analysis and Future Directions -->
+
+
+<!-- Potential Applications -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-3">Ethics Statement</h2>
+        </div>
+
+        <div class="content has-text-justified">
+          <ul>
+            <li>
+              <p>
+                <span class="is-size-5 dnerf"><b>Copyright and License</b></span></br>
+                All data samples collected are sourced from publicly available content on social media platforms. We ensure compliance with copyright by utilizing original links to comics without infringement. In addition, we obtained permission from the author artist (e.g., {Anton Gudim, Liz Climo}) to conduct our benchmark using these public images. Additionally, we commit to open-sourcing our annotated benchmark, providing corresponding links to each comic image. We diligently review samples, filtering out potentially offensive or harmful content.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <span class="is-size-5 dnerf"><b>The Large Vision Language Models</b></span></br>
+                The VLMs utilized in our experiments are pretrained using diverse web corpora, which may introduce biases in their outputs. We advise users to conscientiously evaluate the ethical implications of generated outputs when employing them in future research endeavors.            
+              </p>
+
+
+            </li>
+
+            <li>
+              <p>
+                <span class="is-size-5 dnerf"><b>Data Annotation</b></span></br>
+                Eight human judges are engaged in our annotation process. We compensate these judges with an average hourly wage of $11, ensuring fair remuneration for their contributions.
+              </p>
+            </li>
+
+          </ul> 
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End Error Analysis and Future Directions -->
+
+
+<!-- Citation -->
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+        <h2 class="title">Citation</h2>
+        <p>If you find our work helpful, please consider cite us:</p>
+        <pre><code>@article{hu2024cracking,
+          title={Cracking the Code of Juxtaposition: Can AI Models Understand the Humorous Contradictions},
+          author={Zhe Hu, Tuo Liang, Jing Li, Yiren Lu, Yunlai Zhou, Yiran Qiao, Jing Ma, Yu Yin},
+          journal={arXiv preprint arXiv:2405.19088},
+          year={2024}
+          }
+</code></pre>
+    </div>
+</section>
+<!-- End pipeline overview -->
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-10">
+                <div class="content">
+                    <p>The comics on the website are created by Artist <a href="https://x.com/like_gudim">Gudim</a>.</p>
+
+                    <p>Website template borrowed from <a href="https://github.com/vulab-AI/View-consistent_Object_Removal_in_Radiance_Fields">View-consistent Object Removal in Radiance Fields</a>.</p>
+                    <p>
+                        This website is licensed under a <a rel="license"
+                                                            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                    <!-- <p>
+                        This means you are free to borrow the <a
+                            href="https://github.com/ornerf/ornerf.github.io">source code</a> of this website,
+                        we just ask that you link back to this page in the footer.
+                        Please remember to remove the analytics code included in the header of the website which
+                        you do not want on your website.
+                    </p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
