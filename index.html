@@ -182,8 +182,9 @@ Understanding humor, especially when it involves complex and contradictory narra
       </div>
       <div class="content has-text-justified">
         <p>
+            
           Our benchmark consists of <span class="dnerf">YesBut</span> comics featuring contradictory narratives. Specifically, each sample includes:<br>
-            (1) a two-panel comic that forms a narrative with inherent contradictions;
+            (1) (1) a two-panel comic that contains a contradictory narrative;
             <br>
             (2) a literal description of the comic narratives;
             <br>
@@ -193,7 +194,9 @@ Understanding humor, especially when it involves complex and contradictory narra
             <br>
             (5) a title of the comic.
             <br>
-            Based on these components, we construct various tasks for comic understanding.
+            (6) additional features, including social knowledge and linguistic context necessary for interpreting the comic.
+            <br>
+            Based on these components, we construct various tasks and analysis for comic understanding.
         </p>
 
     </div>
@@ -247,32 +250,32 @@ Understanding humor, especially when it involves complex and contradictory narra
         <div class="columns is-centered has-text-centered">
           <h2 class="title is-3">Navigating VLM Failures: Lessons and Future Pathways</h2>
         </div>
-
+         <div class="item">
+                <img src="static/images/errors.jpg" alt="MY ALT TEXT"/>
+        </div>
         <div class="content has-text-justified">
           <ul>
             <li>
-              <span class="is-size-5 dnerf purple-text underline"><b>Visual Misinterpretation</b></span>: The model incorrectly interprets the image contents.
-              <div class="item">
-                <img src="static/images/errors.jpg" alt="MY ALT TEXT"/>
-              </div>
+              <span class="is-size-5 dnerf purple-text underline"><b>Visual Perception Error:</b></span>: The model incorrectly identify the image elements.
+             
               <p>
-                => <i>This highlights the need for future research to improve models’ visual interpretation capabilities.</i>
+                => <i>These perceptual errors cascade into subsequent reasoning processes, establishing flawed premises that undermine higher-level understanding</i>
               </p>
             </li>
             <li>
               <p>
-              <span class="is-size-5 dnerf red-text"><b>In-depth Reasoning of the Relationship</b></span>: Models also struggle to conduct in-depth reasoning of the relationship between two panels by recognizing their differences and similarities.
+              <span class="is-size-5 dnerf red-text"><b>Key Element Omission</b></span>: Models fail to recognize or acknowledge significant visual elements present in the comic.
               </p>
               <p>
-                => <i>Future work might incorporate recent advanced reasoning approaches (e.g., multi-agent debate [68], test-time compute scaling [69]) to further improve model performance.</i>
+                => <i>Such omissions eliminate essential information required for understanding the comic’s humor.</i>
               </p>
             </li>
             <li>
               <p>
-                <span class="is-size-5 dnerf darkblue-text"><b>Hallucination and Incorrect Association</b></span>
+                <span class="is-size-5 dnerf darkblue-text"><b>Incorrect Association</b></span>: Models make up non-existent information or hallucinations for the visual content.
               </p>
               <p>
-                => <i>This suggests the need for improving world knowledge and social understanding abilities to enhance model performance on this task.</i>
+                => <i>These hallucinated associations impose incorrect interpretive frameworks that fundamentally alter the comic’s intended meaning.</i>
               </p>
             </li>
           </ul> 
