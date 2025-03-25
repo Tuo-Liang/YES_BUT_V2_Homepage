@@ -2,4 +2,4 @@
 This is the Project page for Paper When ‘YES’ Meets ‘BUT’: Can AI Comprehend Contradictory Humor in Comics? 
 https://tuo-liang.github.io/YES_BUT_V2_Homepage/
 
-The paper has submitted to TPAMI.
+The paper has been submitted to TPAMI.
