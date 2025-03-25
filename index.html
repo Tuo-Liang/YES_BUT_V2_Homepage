@@ -92,6 +92,15 @@
                     </a>
                   </span> -->
 
+                <!-- yesbutv1 Link -->
+                  <span class="link-block">
+                    <a href="https://arxiv.org/html/2405.19088v1" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                
+                    <span>YESBUT_V1</span>
+                  </a>
+                </span>
+                        
                   <!-- ArXiv abstract Link -->
                   <span class="link-block">
                     <a href="https://arxiv.org/html/2405.19088v1" target="_blank"
@@ -103,9 +112,11 @@
                   </a>
                 </span>
 
+                
+
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/Tuo-Liang/YESBUT" target="_blank"
+                    <a href="https://github.com/Tuo-Liang/YESBUT_V2" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -243,7 +254,28 @@ Understanding humor, especially when it involves complex and contradictory narra
 </section>
 <!-- End Tasks -->
 
+<!-- Statistic Analysis-->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-3">Dataset Statistics and Attribute Distribution</h2>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            In addition to the basic dataset text length statistics, we conducted a more comprehensive statistics on the content of 1262 images, including <b>Text Presence & Linguistic Dependency, Social Knowledge and Humor Categories</b>. In the article, based on these contents, we conducted more analysis and discussion on the capabilities of VLM.
+          </p>
+        </div>
+        <div class="item">
+          <img src="static/images/attributes_distribution.jpg" alt="MY ALT TEXT"/>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End statics -->
+
 <!-- Error Analysis and Future Directions -->
+
 <section class="section hero is-small">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -285,7 +317,31 @@ Understanding humor, especially when it involves complex and contradictory narra
 </section>
 <!-- End Error Analysis and Future Directions -->
 
+<!-- sft -->
 
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-3">Model Finetuning for Deep Reasoning Tasks</h2>
+        </div>
+         <div class="item">
+                <img src="static/images/sft_vlms.jpg" alt="MY ALT TEXT"/>
+        </div>
+        <div class="content has-text-justified">
+          <ul>
+            <li>
+              <span class="is-size-5 dnerf red-text underline"><b>Data Generation and Finetuning:</b></span>: To overcome the scarcity of large-scale comic datasets, we propose a text-only training approach that leverages LLMs for synthetic data generation. Using GPT-4o, we create 20,000 narrative descriptions with corresponding reasoning questions, based on few-shot prompting from a small labeled set. The resulting dataset is used to finetune only the language components of VLMs, enhancing deep reasoning without modifying visual modules. By leveraging these generated data, we finetune models with LoRA method.
+        
+            </li>
+          </ul> 
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End sft -->
+
+    
 <!-- Potential Applications -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
