@@ -195,7 +195,7 @@ Understanding humor, especially when it involves complex and contradictory narra
         <p>
             
           Our benchmark consists of <span class="dnerf">YesBut</span> comics featuring contradictory narratives. Specifically, each sample includes:<br>
-            (1) (1) a two-panel comic that contains a contradictory narrative;
+            (1) a two-panel comic that contains a contradictory narrative;
             <br>
             (2) a literal description of the comic narratives;
             <br>
@@ -227,7 +227,7 @@ Understanding humor, especially when it involves complex and contradictory narra
       </div>
       <div class="content has-text-justified">
         <p>
-          <br>For each comic, we annotate the corresponding literal description, contradiction explanation, underlying philosophy and comic title. The annotation process consists of two key stages: a <b>human-AI collaborative annotation stage</b> (steps 1 & 2) followed by a <b>quality check and cross-verification stage</b> (step 3). Gold-standard annotations are primarily obtained through human annotators. ('Pos' and 'Neg' in figure represent the positive and negative options, respectively.)
+          <br>For each comic, we annotate the corresponding literal description, contradiction explanation, underlying philosophy and comic title. The annotation process consists of two key stages: a <b>human-AI collaborative annotation stage</b> followed by a <b>quality check and cross-verification stage</b>. Gold-standard annotations are primarily obtained through human annotators. ('Pos' and 'Neg' in figure represent the positive and negative options, respectively.)
         </p>
     </div>
   </div>
@@ -255,7 +255,7 @@ Understanding humor, especially when it involves complex and contradictory narra
 <!-- End Tasks -->
 
 <!-- Statistic Analysis-->
-<section class="section hero is-light">
+<section class="section hero is-small">
   <div class="container is-max-desktop">
     <div class="hero-body">
         <div class="columns is-centered has-text-centered">
@@ -273,6 +273,30 @@ Understanding humor, especially when it involves complex and contradictory narra
   </div>
 </section>
 <!-- End statics -->
+
+<!-- sft -->
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-3">Model Finetuning for Deep Reasoning Tasks</h2>
+        </div>
+         <div class="item">
+                <img src="static/images/sft_vlms.jpg" alt="MY ALT TEXT"/>
+        </div>
+        <div class="content has-text-justified">
+          <ul>
+            <li>
+              <span class="is-size-5 dnerf red-text underline"><b>Data Generation and Finetuning:</b></span>: To overcome the scarcity of large-scale comic datasets, we propose a text-only training approach that leverages LLMs for synthetic data generation. Using GPT-4o, we create 20,000 narrative descriptions with corresponding reasoning questions, based on few-shot prompting from a small labeled set. The resulting dataset is used to finetune only the language components of VLMs, enhancing deep reasoning without modifying visual modules. By leveraging these generated data, we finetune models with LoRA method.
+        
+            </li>
+          </ul> 
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End sft -->
 
 <!-- Error Analysis and Future Directions -->
 
@@ -317,29 +341,7 @@ Understanding humor, especially when it involves complex and contradictory narra
 </section>
 <!-- End Error Analysis and Future Directions -->
 
-<!-- sft -->
 
-<section class="section hero is-small">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-        <div class="columns is-centered has-text-centered">
-          <h2 class="title is-3">Model Finetuning for Deep Reasoning Tasks</h2>
-        </div>
-         <div class="item">
-                <img src="static/images/sft_vlms.jpg" alt="MY ALT TEXT"/>
-        </div>
-        <div class="content has-text-justified">
-          <ul>
-            <li>
-              <span class="is-size-5 dnerf red-text underline"><b>Data Generation and Finetuning:</b></span>: To overcome the scarcity of large-scale comic datasets, we propose a text-only training approach that leverages LLMs for synthetic data generation. Using GPT-4o, we create 20,000 narrative descriptions with corresponding reasoning questions, based on few-shot prompting from a small labeled set. The resulting dataset is used to finetune only the language components of VLMs, enhancing deep reasoning without modifying visual modules. By leveraging these generated data, we finetune models with LoRA method.
-        
-            </li>
-          </ul> 
-        </div>
-    </div>
-  </div>
-</section>
-<!-- End sft -->
 
     
 <!-- Potential Applications -->
